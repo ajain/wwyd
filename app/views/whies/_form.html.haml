@@ -1,0 +1,14 @@
+= bootstrap_form_for @why do |f|
+  - if @why.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@why.errors.count, "error")} prohibited this why from being saved:"
+      %ul
+        - @why.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.text_field :title
+  .field
+    = f.text_area :content
+  .actions
+    = f.submit 'Save'

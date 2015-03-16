@@ -1,0 +1,23 @@
+%h1 Listing whies
+
+%table
+  %thead
+    %tr
+      %th Title
+      %th Content
+      %th
+      %th
+      %th
+      
+  %tbody
+    - @whies.each do |why|
+      %tr
+        %td= why.title
+        %td= why.content
+        %td= link_to 'Show', why
+        %td= link_to 'Edit', edit_why_path(why)
+        %td= link_to 'Destroy', why, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Why', new_why_path

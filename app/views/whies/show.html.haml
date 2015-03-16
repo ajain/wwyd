@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @why.title
+%p
+  %b Content:
+  = @why.content
+
+= link_to 'Edit', edit_why_path(@why)
+\|
+= link_to 'Back', whies_path
