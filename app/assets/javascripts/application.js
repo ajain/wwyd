@@ -15,3 +15,29 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(function($) {
+  function changeAboutTab(e) {
+    e.preventDefault();
+    $("ul#sub-nav>li>a.active").removeClass("active");
+    $(this).addClass("active");
+    showAboutTab($(this).attr("href"));
+    $('.content').css("background-image", 'url(../assets/test.jpg)', 5000);
+
+  }
+
+  function showAboutTab(activeDiv) {
+  	$("#intro-banner").hide();
+    $(".reasons>div").hide();
+    $(activeDiv).show("slow");
+  }
+
+  $("ul#sub-nav>li>a").click(changeAboutTab);
+
+
+});
+
+$(function($) {
+    $(".reasons>div").hide();
+})

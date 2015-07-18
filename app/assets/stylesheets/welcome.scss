@@ -3,6 +3,46 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.active {
+	backround: red;
+}
+.content {
+	padding-top: 50px;
+	height: 60vh;
+	background-image: url("autonomousvehicle.jpg");
+	background-size:cover;
+	background-position:center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+}
+
+
+#intro-message {
+	width: 80vw;
+	max-width: 600px;
+	margin: 0 auto;
+
+
+	p {
+		color: white;
+		text-align: center;
+		vertical-align: 0;
+	}
+
+	p:nth-child(1) {
+		padding-top: 15vh;
+		font-size: 2em;
+	}
+
+	p:nth-child(2){
+		background: #16a085;
+		border-radius: 5px;
+		padding: 0.4em;
+		font-size: 1.5em;
+		width: 30vw;
+		margin: 0 auto;
+	}
+}
+
 /*OVERWRITE BOOTSTRAP*/
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
@@ -10,54 +50,63 @@
 	padding-right: 0px !important;
 }
 
+p {
+	font-size: 1.5em;
+	line-height: 1.5em;
+
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'open_sansbold', Arial, sans-serif;
+}
+
 .container {
 	width: 100%;
 }
 
-.li {
-	background: #bdc3c7;
-}
-#reason {
-/*	border: 1px solid grey;*/
-	height: 16.666vw;
+#sub-nav {
+	background: #34495e;
+	border: 0.1em dotted #95a5a6;
+	height: 4em;
 	text-align: center;
 	vertical-align: middle;
 
-/*	margin: auto 0;*/
 }
 
-/*.li:nth-child(8n+1) {
-background: #c0392b;
-}
-.li:nth-child(8n+3) {
-background: #27ae60;
-}
-.li:nth-child(8n+5) {
-background: #8e44ad;
-}
-.li:nth-child(8n+7) {
-background: #2980b9;
-}*/
-
-.li:nth-child(8n+1):hover {
-background: #e74c3c;
-}
-.li:nth-child(8n+3):hover {
-background: #2ecc71;
-}
-.li:nth-child(8n+5):hover {
-background: #9b59b6;
-}
-.li:nth-child(8n+7):hover {
-background: #3498db;
+.li {
+	-webkit-transition: background 0.3s;
+	transition: background 0.3s;
 }
 
-#reason a {
+.li#reason:hover {
+	background: #ecf0f1;
+
+	a {
+		color: #95a5a6;
+	}
+}
+
+
+
+/*.li#reason:nth-child(8n+1):hover {
+	background: #e74c3c;
+}
+.li#reason:nth-child(8n+3):hover {
+	background: #2ecc71;
+}
+.li#reason:nth-child(8n+5):hover {
+	background: #9b59b6;
+}
+.li#reason:nth-child(8n+7):hover {
+	background: #3498db;
+}
+*/
+#reason li {
 	font-size: 22px;
 	vertical-align: middle;
 	display: block;
 	color: white;
-	padding-top: 7vw;
+/*	padding-top: 7vw;*/
 	width: 100%;
 	height: 100%;
 
@@ -67,4 +116,16 @@ background: #3498db;
 	background: none;
 	font-family: 'open_sansbold', Arial, sans-serif;
 	text-decoration: none;
+}
+
+
+.reasons {
+	height: 60vh;
+}
+
+.reasons #why_1 {
+	background-image: url("test.jpg");
+	background-size:cover;
+	background-position:center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }

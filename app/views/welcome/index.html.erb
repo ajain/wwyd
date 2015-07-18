@@ -1,0 +1,26 @@
+/ - @whies = Why.all
+
+/ = render partial: 'shared/toolbar'
+/ = render partial: 'shared/content'
+/ = render partial: 'shared/help'
+
+<% @whies = Why.all %>
+<%= render partial: 'shared/toolbar' %>
+<%= render partial: 'shared/content' %>
+<%= render partial: 'shared/help' %>
+
+
+<div class="container">
+  <div class="row">
+  	<ul id="sub-nav">
+	  	<% @whies.each do |why| %>
+	    	<li class="col-md-2 col-sm-4 reason">
+	        	<%= link_to why.title, "#why_"+why.id.to_s %>
+	        </li>
+		<% end %>
+	</ul>
+  </div>
+</div>
+
+
+
