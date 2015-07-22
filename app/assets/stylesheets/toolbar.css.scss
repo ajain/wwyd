@@ -4,14 +4,27 @@
 
 }
 
-.navbar-brand {
-	padding-top: 10px !important;
-}
 
 .navbar-fixed-top {
 	border-width: 0px;
 }
 
-.navbar a {
-	color: white;
+.navbar-brand {
+  width: 400px;
+  background: url("37k.png") no-repeat left center;
+  margin: 0px 0px 0px 0px !important;
+
+}
+
+
+@media only screen and (max-width:590px) {
+  .navbar-brand {
+    width: 100px;
+    background: url("ap-small.png") no-repeat left center;
+  }
+}
+
+@media only screen and (max-width:790px) {
+  .navbar-brand {
+    margin: 0px 0px 0px 10px !important;  }
 }

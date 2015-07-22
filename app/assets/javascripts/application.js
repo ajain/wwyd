@@ -23,14 +23,14 @@ $(function($) {
     $("ul#sub-nav>li>a.active").removeClass("active");
     $(this).addClass("active");
     showAboutTab($(this).attr("href"));
-    $('.content').css("background-image", 'url(../assets/test.jpg)', 5000);
+    // $('.content').css("background-image", 'url(../assets/test.jpg)', 5000);
 
   }
 
   function showAboutTab(activeDiv) {
   	$("#intro-banner").hide();
     $(".reasons>div").hide();
-    $(activeDiv).show("slow");
+    $(activeDiv).show();
   }
 
   $("ul#sub-nav>li>a").click(changeAboutTab);

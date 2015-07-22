@@ -1,18 +1,23 @@
 <div class="content">
-	<div class="container">
+	<div class="container-fluid">
 		<div id="intro-banner">
 			<div id="intro-message">
 				<p>In the future, people, goods & services will move autonomously around the country.</p>
 				<p>Help us make the future, today.</p>	
 			</div>
 		</div>
-
-		<div class="reasons">
-			<%= div_for(@whies) do |why| %>
-				<%= why.title %>
-				<%= why.content %>
-	
-			<% end %>
-		</div>
 	</div>
+</div>	
+
+<div class="reasons">
+	<%= div_for(@whies) do |why| %>
+		<div class = "container-fluid">
+			<h3>
+				<%= why.title %>
+			</h3>
+			<p>
+				<%= why.content %>	
+			</p>
+		</div>	
+	<% end %>
 </div>

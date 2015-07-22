@@ -3,15 +3,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.active {
-	backround: red;
-}
 .content {
 	padding-top: 50px;
 	height: 60vh;
 	background-image: url("autonomousvehicle.jpg");
-	background-size:cover;
-	background-position:center;
+	background-size: cover;
+	background-position: center;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
 }
 
@@ -21,7 +18,6 @@
 	max-width: 600px;
 	margin: 0 auto;
 
-
 	p {
 		color: white;
 		text-align: center;
@@ -29,17 +25,24 @@
 	}
 
 	p:nth-child(1) {
-		padding-top: 15vh;
-		font-size: 2em;
+		padding-top: 10vh;
+		font-size: 5vmin;
+		line-height: 6vmin;
+/*		font-size: 2em;*/
 	}
 
 	p:nth-child(2){
 		background: #16a085;
 		border-radius: 5px;
 		padding: 0.4em;
-		font-size: 1.5em;
+		font-size: 2vmax;
+		line-height: 3vmax;
 		width: 30vw;
 		margin: 0 auto;
+	}
+	
+	p:nth-child(2):hover {
+		background: #1abc9c;	
 	}
 }
 
@@ -51,38 +54,39 @@
 }
 
 p {
-	font-size: 1.5em;
-	line-height: 1.5em;
+	font-size: 2.5vmin;
+	line-height: 3.5vmin;
 
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-	font-family: 'open_sansbold', Arial, sans-serif;
-}
-
-.container {
-	width: 100%;
-}
 
 #sub-nav {
-	background: #34495e;
-	border: 0.1em dotted #95a5a6;
+	background: white;
 	height: 4em;
 	text-align: center;
 	vertical-align: middle;
 
 }
 
-.li {
-	-webkit-transition: background 0.3s;
-	transition: background 0.3s;
+.reason a {
+	padding-top: 4vmin !important;
+	padding-bottom: 4vmin !important;
+	color: #7f8c8d;
+	display: block;
+	font-size: 3.5vmin;
 }
 
-.li#reason:hover {
-	background: #ecf0f1;
+
+.reason:hover {
+	border-left: 1vmin solid #1abc9c;
+	background: #bdc3c7;
+	transition: background 0.3s ease, border 0.3s ease;
+
 
 	a {
-		color: #95a5a6;
+		color: white;
+		text-decoration: none;
+
 	}
 }
 
@@ -101,31 +105,37 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background: #3498db;
 }
 */
-#reason li {
-	font-size: 22px;
-	vertical-align: middle;
-	display: block;
-	color: white;
-/*	padding-top: 7vw;*/
-	width: 100%;
-	height: 100%;
 
-}
-
-#reason a:hover {
+/*#reason a:hover {
 	background: none;
 	font-family: 'open_sansbold', Arial, sans-serif;
 	text-decoration: none;
 }
+*/
 
+.why {
 
-.reasons {
 	height: 60vh;
-}
-
-.reasons #why_1 {
-	background-image: url("test.jpg");
+	margin-top: -60vh;
+	padding-top: 50px;
 	background-size:cover;
 	background-position:center;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+	color: white;
+
+	h3 {
+		color: #ecf0f1;
+		border-bottom: 0.15em solid #1abc9c;
+		font-size: 6vmin;
+	}
 }
+
+.reason {
+	
+}
+#why_1 {
+	background-image: url("insurance.jpg");
+	transition: background-image 1s ease-in-out;
+
+}
+
