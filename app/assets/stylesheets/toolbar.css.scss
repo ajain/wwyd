@@ -11,7 +11,7 @@
 
 .navbar-brand {
   width: 400px;
-  background: url("37k.png") no-repeat left center;
+  background: url(asset-path("37k.png")) no-repeat left center;
   margin: 0px 0px 0px 0px !important;
 
 }
@@ -20,7 +20,7 @@
 @media only screen and (max-width:590px) {
   .navbar-brand {
     width: 100px;
-    background: url("ap-small.png") no-repeat left center;
+    background: url(asset-path("ap-small.png")) no-repeat left center;
   }
 }
 

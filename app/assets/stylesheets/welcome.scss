@@ -134,7 +134,7 @@ p {
 	
 }
 #why_1 {
-	background-image: url("insurance.jpg");
+	background-image: url(asset-path("insurance.jpg"));
 	transition: background-image 1s ease-in-out;
 
 }
