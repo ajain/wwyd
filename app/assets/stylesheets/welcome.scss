@@ -6,7 +6,7 @@
 .content {
 	padding-top: 50px;
 	height: 60vh;
-	background-image: url("autonomousvehicle.jpg");
+	background-image: url(asset-path("autonomousvehicle.jpg"));
 	background-size: cover;
 	background-position: center;
 	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
